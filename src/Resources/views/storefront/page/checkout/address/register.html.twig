@@ -1,0 +1,28 @@
+{% sw_extends '@Storefront/storefront/page/checkout/address/register.html.twig' %}
+
+{% block page_checkout_register_personal_guest %}
+    {% set b2bMode = config('ActB2bRegistration.config.accountChoiceMode') %}
+    {% if b2bMode == 'forceAccount' %}
+        <input type="hidden" name="createCustomerAccount" value="true">
+    {% elseif b2bMode == 'forceGuest' %}
+        <input type="hidden" name="createCustomerAccount" value="">
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block component_account_register_personal_password %}
+    {% if config('ActB2bRegistration.config.accountChoiceMode') == 'forceGuest' %}
+        {# Guest mode: no account, so no password fields. #}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block component_account_register_personal_password_confirmation %}
+    {% if config('ActB2bRegistration.config.accountChoiceMode') == 'forceGuest' %}
+        {# Guest mode: no account, so no password confirmation. #}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

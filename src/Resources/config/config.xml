@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title lang="de-DE">B2B-Registrierung</title>
+        <title lang="en-GB">B2B Registration</title>
+
+        <input-field type="bool">
+            <name>forceBusinessAccount</name>
+            <label lang="de-DE">Kontotyp „Firma" erzwingen</label>
+            <label lang="en-GB">Force company account type</label>
+            <helpText lang="de-DE">Blendet die Auswahl Privat/Firma aus, setzt immer „Firma" und zeigt die Firmenfelder an.</helpText>
+            <helpText lang="en-GB">Hides the private/company selector, always sets "company", and shows the company fields.</helpText>
+            <defaultValue>false</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>accountChoiceMode</name>
+            <label lang="de-DE">Gast/Konto-Auswahl</label>
+            <label lang="en-GB">Guest/account choice</label>
+            <helpText lang="de-DE">Steuert die „Kundenkonto anlegen"-Auswahl im Checkout. Hinweis: „Immer Gast" ist für den Checkout gedacht — auf der separaten Seite /account/register bleiben die Passwortfelder sichtbar, das Gast-Verhalten wird aber serverseitig trotzdem erzwungen.</helpText>
+            <helpText lang="en-GB">Controls the "create customer account" choice in checkout. Note: "always guest" targets the checkout — on the standalone /account/register page the password fields stay visible, but guest behaviour is still enforced server-side.</helpText>
+            <defaultValue>off</defaultValue>
+            <options>
+                <option>
+                    <id>off</id>
+                    <name lang="de-DE">Standard (Auswahl anzeigen)</name>
+                    <name lang="en-GB">Default (show choice)</name>
+                </option>
+                <option>
+                    <id>forceAccount</id>
+                    <name lang="de-DE">Auswahl ausblenden – immer Konto anlegen</name>
+                    <name lang="en-GB">Hide choice – always create account</name>
+                </option>
+                <option>
+                    <id>forceGuest</id>
+                    <name lang="de-DE">Auswahl ausblenden – immer Gast</name>
+                    <name lang="en-GB">Hide choice – always guest</name>
+                </option>
+            </options>
+        </input-field>
+    </card>
+</config>

@@ -1,0 +1,25 @@
+{% sw_extends '@Storefront/storefront/component/account/register.html.twig' %}
+
+{% block component_account_register_personal_address_fields %}
+    {% if config('ActB2bRegistration.config.forceBusinessAccount') %}
+        {% sw_include '@Storefront/storefront/component/address/address-personal.html.twig' with {
+            showBirthdayField: config('core.loginRegistration.showBirthdayField'),
+            accountType: constant('Shopware\\Core\\Checkout\\Customer\\CustomerEntity::ACCOUNT_TYPE_BUSINESS'),
+            onlyCompanyRegistration: true
+        } %}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block component_account_register_company_fields %}
+    {% if config('ActB2bRegistration.config.forceBusinessAccount') %}
+        {% sw_include '@Storefront/storefront/component/address/address-personal-company.html.twig' with {
+            prefix: 'billingAddress',
+            address: data.get('billingAddress'),
+            hasSelectedBusiness: true
+        } %}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

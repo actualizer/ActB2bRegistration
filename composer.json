@@ -1,0 +1,49 @@
+{
+    "name": "actualize/act-b2b-registration",
+    "description": "Trims the storefront registration form to B2B: forces company account and removes the guest/account choice, configurable per sales channel.",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Actualize",
+            "email": "plugin@actualize.de",
+            "homepage": "https://actualize.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "shopware/core": ">=6.7 <6.8",
+        "shopware/storefront": ">=6.7 <6.8"
+    },
+    "extra": {
+        "shopware-plugin-class": "Actualize\\ActB2bRegistration\\ActB2bRegistration",
+        "label": {
+            "de-DE": "Actualize: B2B-Registrierung",
+            "en-GB": "Actualize: B2B Registration"
+        },
+        "description": {
+            "de-DE": "Trimmt die Registriermaske auf B2B: erzwingt den Kontotyp Firma und entfernt die Gast/Konto-Auswahl (konfigurierbar: immer Konto oder immer Gast). Pro Sales Channel schaltbar.",
+            "en-GB": "Trims the registration form to B2B: forces the company account type and removes the guest/account choice (configurable: always account or always guest). Toggleable per sales channel."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://actualize.de",
+            "en-GB": "https://actualize.de"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/actualizer/ActB2bRegistration/issues",
+            "en-GB": "https://github.com/actualizer/ActB2bRegistration/issues"
+        }
+    },
+    "autoload": {
+        "psr-4": { "Actualize\\ActB2bRegistration\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Actualize\\ActB2bRegistration\\Tests\\": "tests/" }
+    },
+    "scripts": {
+        "format": "docker run --rm -v $(pwd):/ext shopware/shopware-cli:latest extension format /ext",
+        "check": "docker run --rm -v $(pwd):/ext shopware/shopware-cli:latest extension validate --full /ext"
+    }
+}
