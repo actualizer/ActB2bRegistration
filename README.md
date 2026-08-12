@@ -23,7 +23,7 @@ A Shopware 6 plugin that trims the storefront registration form to B2B: it force
 ### Via Composer (recommended)
 
 ```bash
-composer require actualize/act-b2b-registration
+composer require actualizer/b2b-registration
 bin/console plugin:refresh
 bin/console plugin:install --activate ActB2bRegistration
 bin/console cache:clear
