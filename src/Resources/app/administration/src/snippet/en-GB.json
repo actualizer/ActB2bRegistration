@@ -1,0 +1,18 @@
+{
+    "act-b2b-registration": {
+        "settings": {
+            "info": {
+                "howTo": {
+                    "title": "How it works",
+                    "item1": "The settings apply per sales channel — the selector sits at the top of this page.",
+                    "item2": "<strong>Kontotyp „Firma“ erzwingen</strong> hides the choice in the registration form and creates every new account as a company account.",
+                    "item3": "<strong>Gast/Konto-Auswahl</strong> controls whether customers can choose between a guest order and a customer account during checkout.",
+                    "item4": "Both rules apply to registration in the account area and in the checkout alike, and are enforced server-side — a manipulated form does not get around them.",
+                    "item5": "With guest ordering enforced, the password fields stay visible on the standalone registration page; a guest account is created regardless."
+                },
+                "description": "Trims the registration form to B2B: forces the company account type and removes the guest/account choice (configurable: always account or always guest). Toggleable per sales channel.",
+                "issues": "Problems or feature requests?"
+            }
+        }
+    }
+}

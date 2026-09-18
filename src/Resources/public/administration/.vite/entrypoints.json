@@ -1,0 +1,25 @@
+{
+  "base": "/bundles/actb2bregistration/administration/",
+  "entryPoints": {
+    "act-b2b-registration": {
+      "css": [
+        "/bundles/actb2bregistration/administration/assets/act-b2b-registration-Kvscjsro.css"
+      ],
+      "dynamic": [],
+      "js": [
+        "/bundles/actb2bregistration/administration/assets/act-b2b-registration-C-qgmUU-.js"
+      ],
+      "legacy": false,
+      "preload": []
+    }
+  },
+  "legacy": false,
+  "metadatas": {},
+  "version": [
+    "7.1.0",
+    7,
+    1,
+    0
+  ],
+  "viteServer": null
+}

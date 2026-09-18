@@ -1,0 +1,18 @@
+{
+    "act-b2b-registration": {
+        "settings": {
+            "info": {
+                "howTo": {
+                    "title": "So funktioniert's",
+                    "item1": "Die Einstellungen gelten je Verkaufskanal — die Auswahl steht oben auf dieser Seite.",
+                    "item2": "<strong>Kontotyp „Firma“ erzwingen</strong> blendet die Auswahl im Registrierungsformular aus und legt jedes neue Konto als Firmenkonto an.",
+                    "item3": "<strong>Gast/Konto-Auswahl</strong> steuert, ob im Checkout zwischen Gastbestellung und Kundenkonto gewählt werden kann.",
+                    "item4": "Beide Regeln greifen für die Registrierung im Konto wie im Checkout und werden serverseitig durchgesetzt — ein manipuliertes Formular umgeht sie nicht.",
+                    "item5": "Bei erzwungener Gastbestellung bleiben auf der eigenständigen Registrierungsseite die Passwortfelder sichtbar; angelegt wird trotzdem ein Gastkonto."
+                },
+                "description": "Trimmt die Registriermaske auf B2B: erzwingt den Kontotyp Firma und entfernt die Gast/Konto-Auswahl (konfigurierbar: immer Konto oder immer Gast). Pro Sales Channel schaltbar.",
+                "issues": "Probleme oder Feature-Wünsche?"
+            }
+        }
+    }
+}

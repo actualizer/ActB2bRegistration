@@ -1,0 +1,11 @@
+{
+  "main.js": {
+    "file": "assets/act-b2b-registration-C-qgmUU-.js",
+    "name": "act-b2b-registration",
+    "src": "main.js",
+    "isEntry": true,
+    "css": [
+      "assets/act-b2b-registration-Kvscjsro.css"
+    ]
+  }
+}
