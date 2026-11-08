@@ -15,7 +15,7 @@ A Shopware 6 plugin that trims the storefront registration form to B2B: it force
 
 ## Requirements
 
-- Shopware 6.7.x
+- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
 - PHP 8.4 or higher
 
 ## Installation
