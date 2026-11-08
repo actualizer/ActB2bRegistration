@@ -2,6 +2,11 @@
 
 A Shopware 6 plugin that trims the storefront registration form to B2B: it forces the "company" account type and removes the guest/account choice, so shops that only sell to businesses get a clean, unambiguous sign-up. Every feature is toggleable per sales channel, and enforcement is applied both visually (Twig) and server-side (route decorator), so a manipulated or bot-submitted form cannot bypass it.
 
+## Requirements
+
+- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
+- PHP 8.4 or higher
+
 ## Features
 
 - **Force company account type**: hides the private/company selector, always registers as "company", and shows the company fields (company name, department, VAT ID) as required
@@ -11,11 +16,6 @@ A Shopware 6 plugin that trims the storefront registration form to B2B: it force
 - Applies to both `/account/register` and `/checkout/register` (shared registration component)
 - Multi-language support (German & English)
 - Per-sales-channel configuration
-
-## Requirements
-
-- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
-- PHP 8.4 or higher
 
 ## Installation
 
