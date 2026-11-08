@@ -11,7 +11,6 @@ A Shopware 6 plugin that trims the storefront registration form to B2B: it force
 - Applies to both `/account/register` and `/checkout/register` (shared registration component)
 - Multi-language support (German & English)
 - Per-sales-channel configuration
-- Compatible with Shopware 6.7.x
 
 ## Requirements
 
@@ -82,8 +81,6 @@ bin/console cache:clear
 
 ## Compatibility
 
-- **Shopware Version**: 6.7.x
-- **PHP Version**: 8.4+
 - **Template Compatibility**: Uses Shopware 6.7+ template structure
 
 ## Support
